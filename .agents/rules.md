@@ -37,11 +37,12 @@
 ### 런타임 및 언어
 
 - `bun`, `bunx`, `TypeScript`를 기본으로 사용해.
-- **Next.js 16**, **React 19**, **Tailwind CSS**, **Shadcn UI** 최상위 문법을 준수해.
+- **Next.js 16**, **React 19**, **Tailwind CSS**, **Shadcn UI** 최상위 문법을 준수해. (`cacheComponents`, `taint` API 등 최신 표준 우선 적용)
 
 ### 빌드 및 배포 가드레일
 
 - **Zero-Error Pipeline**: `bun run ready`를 반드시 통과해야 작업 완료로 간주해. (Warning 포함 모든 로그 정화 의무)
+- **AI-Optimized Reporting**: 모든 검증 결과는 AI 에이전트의 즉각적인 파싱을 위해 JSON 추출을 기본으로 하며, `JSON_ONLY=true` 환경 변수를 통해 리소스 오버헤드를 제어해.
 - **Vercel Readiness**: 리전 일치, CSP 헤더, Rate Limiting 등 운영 환경의 안정성을 사전에 고려해.
 - **RSC-First Strategy**: 모든 컴포넌트는 서버 컴포넌트(RSC)를 기본으로 하며, 인터랙션이 필요한 경우에만 최소 단위로 `"use client"`를 사용해.
 - **Data Hydration**: 클라이언트 컴포넌트로 데이터를 넘길 때는 RSC에서 직렬화(Serialization)가 가능한 순수 객체만 전달해.
@@ -67,7 +68,7 @@
 | **렌더링 전략**   | **Static-First**: 가능한 모든 페이지는 SSG(force-static) 지향. LuxuryLoader 실행 중 주요 링크 리소스를 미리 로드(Prefetching)하여 전환 딜레이를 제로화하고 Lighthouse 성능 95점 이상 유지.                                        |
 | **모션 표준**     | **Premium Interaction**: 상황별 최적화된 이징(Easing)과 미세 애니메이션/트랜지션 의무화.                                                                                                                                          |
 | **디자인 미학**   | **Luxury Entrance**: Typography Mastery(자간/행간/커닝) 및 Soft Glow/Shadow를 통한 프리미엄 시각 경험과 시네마틱한 등장 효과(Staggered Reveal) 제공.                                                                              |
-| **무결성 증명**   | **Mechanical Proof**: 작업 완료 시 정규식/스크립트를 통한 전수 조사 결과를 오빠(USER)에게 수치와 함께 보고할 것.                                                                                                                  |
+| **무결성 증명**   | **Mechanical Proof**: 작업 완료 시 정규식/스크립트를 통한 전수 조사 결과를 오빠(USER)에게 수치와 함께 보고해. 특히 이전 기록(Archive)과의 트렌드 비교를 통해 개선/악화 여부를 명확히 명시할 것.                                   |
 
 ---
 
