@@ -1,46 +1,48 @@
-# 📅 [YYYY-MM-DD] - [작업 제목 및 핵심 목표]
+# 📜 프로젝트 작업 이력 (Histories)
 
-## 🤖 AI Agent Context
-
-- **Model**: [Gemini 3.1 Pro / Gemini 3 Flash]
-- **Agent**: Antigravity (세희)
-- **Work Mode**: E2E 완수형 에이전트
-
-## 📋 Implementation Plan.md
-
-<!-- [해당 작업의 최종 승인된 implementation_plan.md 내용을 여기에 그대로 기록] -->
-
-## 📝 Task.md
-
-<!-- [최종 완료된 task.md 상태를 여기에 그대로 기록] -->
-
-## 🚀 Walkthrough.md
-
-<!-- [사용자에게 보고한 walkthrough.md 내용을 여기에 그대로 기록] -->
-
-## 🎨 Summary & Decision Logging
-
-### 핵심 의사결정 (ADR)
-
-- **Problem**: [작업 전 발생한 근본 원인]
-- **Solution**: [도입한 기술적 선택과 근거]
-
-### 성능 및 품질 지표 (Impact)
-
-- **Runtime/Bundle**: [성능 변화 수치 - Lighthouse, Bundle Size 등]
-- **Code Purity**: [Zero-Ignore 달성 및 Lint/Build 성공 여부]
-
-### 🛠️ 무결성 증명 (Mechanical Proof)
-
-- **Self-Audit**: `bun run ready:post:care` 또는 `bun run ready:prod:care` 실행 결과를 바탕으로 하드코딩 리터럴 0개 및 리포트 유효성 증명.
-
-### 💬 사용자 피드백 및 특이사항
-
-- 히스토리 파일명과 커밋 메시지는 한글로 작성한다.
+> "기록되지 않은 경험은 망각된다. 명확한 기록이 곧 다음 작업의 자산이다." — 세희
 
 ---
 
-> 💡 **AI Assistant Guide**
->
-> - 이 기록은 미래의 내가 현재의 맥락을 완벽히 복기하기 위한 '지식 저장소'야.
-> - 아티팩트(Plan, Task, Walkthrough)의 모든 내용을 생략 없이 포함할 것.
+## 📅 작업 정보: [YYYY-MM-DD HH:mm] - [작업 제목]
+- **작업 식별자**: [PR/Ticket 번호 등]
+- **작업 주체**: 세희 (Antigravity)
+- **사용 모델**: [Gemini 3.1 Pro / Gemini 3 Flash / Claude 4.6 Sonnet / Claude 4.6 Opus]
+
+---
+
+## 🏗️ 아티팩트 (Artifacts)
+
+### 📋 Implementation Plan
+- 최종 승인된 계획서 기록
+
+### 📝 Task Detail
+- 수행한 세부 작업 내용 기록
+
+### 🚀 Walkthrough
+- 사용자 보고 및 결과물 기록
+
+---
+
+## 🎨 의사결정 및 성과 (Summary & Decision)
+
+### 🧩 ADR (Architecture Decision Records)
+- **문제(Problem)**: [발생한 근본 원인 및 제약 사항]
+- **결정(Solution)**: [도입한 기술적 선택과 근거]
+- **대안(Alternatives)**: [고려했던 다른 방법과 기각 사유]
+
+### 📈 품질 및 영향 (Impact)
+- **성능(Performance)**: [Lighthouse, 로딩 속도, Bundle Size 등 지표]
+- **무결성(Purity)**: [Zero-Ignore 준수 여부, Lint/Build 통과 여부]
+- **테스트(Verification)**: [추가된 테스트 케이스 및 검증 방식]
+
+### 💡 회고 및 학습 (Retrospective)
+- **좋았던 점**: [무엇이 이번 작업의 성공을 견인했는가?]
+- **아쉬운 점**: [다음에 보완해야 할 기술적/프로세스적 한계]
+- **사용자 피드백**: [요청 사항 및 특이사항]
+
+---
+
+> 💡 **작성 가이드**
+> - 히스토리 파일명은 `YYYYMMDD_작업명.md` 형식으로 별도 저장한다.
+> - 모든 항목은 생략 없이 기입하여 미래의 내가 완벽히 복기 가능하도록 한다.
